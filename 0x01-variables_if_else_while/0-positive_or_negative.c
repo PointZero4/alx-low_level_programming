@@ -4,11 +4,10 @@
 
 #include <time.h>
 /**
- * main - main block
+ *main - main block
  * Description: prints "is it positive or negative"
  * Return: 0
  */
-
 int main(void)
 
 {
@@ -16,7 +15,7 @@ int main(void)
 		int n;
 
 
-
+  
 		srand(time(0));
 
 		n = rand() - RAND_MAX / 2;
