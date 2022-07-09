@@ -1,6 +1,6 @@
-fndef FILE_HOLBERTON
+#ifndef _MAIN_H_
 
-#define FILE_HOLBERTON
+#define _MAIN_H_
 
 
 
@@ -25,6 +25,8 @@ void print_diagonal(int n);
 void print_square(int size);
 
 void print_triangle(int size);
+
+void print_number(int n);
 
 void print_number(int n);
 
