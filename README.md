@@ -1,1 +1,1 @@
-Debugging codes in C
+Structures in C
