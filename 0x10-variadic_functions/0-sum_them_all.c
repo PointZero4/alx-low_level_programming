@@ -4,52 +4,42 @@
 
 /**
  *
- *  * print_numbers - prints numbers given as parameters
+ *  * sum_them_all - calculates the sum of all its parameters
  *
- *   * @separator: string to be printed between numbers
+ *   * @n: number of arguments passed to the function
  *
- *    * @n: number of integers passed to the function
+ *    *
  *
- *     */
+ *     * Return: the resulting sum
+ *
+ *      */
 
-void print_numbers(const char *separator, const unsigned int n, ...)
+int sum_them_all(const unsigned int n, ...)
 
 {
 
 		unsigned int i;
 
-			va_list list;
+			int sum = 0;
+
+				va_list list;
 
 
 
-				va_start(list, n);
+					va_start(list, n);
 
 
 
-					for (i = 0; i < n; i++)
+						for (i = 0; i < n; i++)
 
-							{
-
-										if (!separator)
-
-														printf("%d", va_arg(list, int));
-
-												else if (separator && i == 0)
-
-																printf("%d", va_arg(list, int));
-
-														else
-
-																		printf("%s%d", separator, va_arg(list, int));
-
-															}
+									sum += va_arg(list, int);
 
 
 
-						va_end(list);
+							va_end(list);
 
 
 
-							printf("\n");
+								return (sum);
 
 }
